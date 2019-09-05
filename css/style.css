@@ -13,3 +13,13 @@ header form {
 header .logo {
   float: left;
 }
+
+nav {
+  padding-left: 80px !important;
+  margin-bottom: 30px;
+}
+
+.card-header {
+  background: linear-gradient(#04519b, #044687 60%, #033769);
+  color: #fff;
+}

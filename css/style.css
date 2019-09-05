@@ -23,3 +23,7 @@ nav {
   background: linear-gradient(#04519b, #044687 60%, #033769);
   color: #fff;
 }
+
+.card {
+  margin-bottom: 30px !important;
+}

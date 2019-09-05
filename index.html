@@ -5,11 +5,13 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Starter Template for Bootstrap</title>
+  <title>Dobble Social Media</title>
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.css" rel="stylesheet">
+
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -70,18 +72,76 @@
         <div class="col-md-8">
           <div class="card">
             <div class="card-header">
-              Wall
+              <h5 class="card-title">Wall</h5>
             </div>
             <div class="card-body">
               <form class="form-group">
                 <textarea class="form-control" placeholder="Write on the wall" rows="8" cols="80"></textarea><br>
-                <button type="submit" class="btn btn-primary ">submit</button>
+                <button type="submit" class="btn btn-secondary ">submit</button>
+                <div class="float-right">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"></i> Text</button>
+                    <button type="button" class="btn btn-secondary"><i class="far fa-image"></i> Image</button>
+                    <button type="button" class="btn btn-secondary"><i class="fas fa-video"></i> Video</button>
+                  </div>
+                </div>
               </form>
+
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-2">
+                  <!--  avatar -->
+                  <a class="post-avatar" href="profile.html"><img class="img-thumbnail" src="img/user.png" alt="user">
+                    <div class="text-center">DevUser1</div>
+                  </a>
+                  <!-- Likes -->
+                  <div class="likes text-center"> 7 Likes</div>
+                </div>
+                <div class="col-sm-10">
+                  <div class="bubble">
+                    <div class="pointer">
+                      <!-- Sample text -->
+                      <p>In publishing and graphic design, lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document
+                        or a typeface without relying on meaningful content.</p>
+                    </div>
+                    <div class="pointer-border"></div>
+                  </div>
+                  <p class="post-actions"><a href="#">Comment</a> - <a href="#">Likes</a> - <a href="#">Follow</a> -
+                    <a href="#">Share</a> </p>
+                  <!-- Comment Form -->
+                  <div class="comment-form">
+                    <form>
+                      <div class="form-row align-items-center ">
+                        <div class="col-auto ">
+                          <input type="text" class="form-control" id="inlineFormInputName" placeholder="Enter Comment">
+                        </div>
+                        <div class="col-auto">
+                          <button type="submit" class="btn btn-secondary">Add</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="clearfix"></div>
 
+                  <div class="comments">
+                    <div class="comment">
+                      <a class="comments-avatar float-left" href="#"><img src="img/user.png" alt="user"></a>
+                      <div class="comment-text">
+                        <p>typeface without relying on meaningful content.</p>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- col-md-8 end -->
+        <div class="col-md-4">
+          <!-- Some Code -->
         </div>
 
       </div>
@@ -92,9 +152,10 @@
   <!-- Bootstrap core JavaScript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://kit.fontawesome.com/f23b843d18.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="js/bootstrap.js"></script>
-  <script src="js/main.js"></script>
+
 </body>
 
 </html>

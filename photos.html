@@ -5,11 +5,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Groups: Dobble Social Media</title>
+  <title>Photos: Dobble Social Media</title>
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
+  <link href="css/ekko-lightbox.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 
 </head>
@@ -53,10 +54,10 @@
         <li class="nav-item">
           <a class="nav-link" href="members.html">Members</a>
         </li>
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="groups.html">Groups</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item  active">
           <a class="nav-link" href="photos.html">Photos</a>
         </li>
         <li class="nav-item">
@@ -70,37 +71,15 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8">
-          <div class="groups">
-            <h1 class="page-header">Groups</h1>
-            <div class="group-item">
-              <img src="img/group.png" alt="">
-              <h4><a href="#">Sample Group One</a></h4>
-              <p>This is a sample Dobble Social network group</p>
-              <p><a href="#" class="btn btn-secondary">Join Group</a></p>
-            </div>
-            <div class="clearfix"></div>
-            <div class="group-item">
-              <img src="img/group.png" alt="">
-              <h4><a href="#">Sample Group two</a></h4>
-              <p>This is a sample Dobble Social network group</p>
-              <p><a href="#" class="btn btn-secondary">Join Group</a></p>
-            </div>
-            <div class="clearfix"></div>
-            <div class="group-item">
-              <img src="img/group.png" alt="">
-              <h4><a href="#">Sample Group three</a></h4>
-              <p>This is a sample Dobble Social network group</p>
-              <p><a href="#" class="btn btn-secondary">Join Group</a></p>
-            </div>
-            <div class="clearfix"></div>
-            <div class="group-item">
-              <img src="img/group.png" alt="">
-              <h4><a href="#">Sample Group Four</a></h4>
-              <p>This is a sample Dobble Social network group</p>
-              <p><a href="#" class="btn btn-secondary">Join Group</a></p>
-            </div>
-            <div class="clearfix"></div>
-          </div>
+          <h1 class="page-header">Photos</h1>
+          <ul class="photos gallery-parent">
+            <li><a href="img/sample1.jpg" data-gallery="mygallery" data-toggle="lightbox" data-title="Image One" data-footer="This is Image 1"><img src="img/sample1.jpg" class="img-thumbnail"</a></li>
+            <li><a href="img/sample2.jpg" data-gallery="mygallery" data-toggle="lightbox" data-title="Image two" data-footer="This is Image 2"><img src="img/sample2.jpg" class="img-thumbnail"</a></li>
+            <li><a href="img/sample3.jpg" data-gallery="mygallery" data-toggle="lightbox" data-title="Image Three" data-footer="This is Image 3"><img src="img/sample3.jpg" class="img-thumbnail"</a></li>
+            <li><a href="img/sample4.jpg" data-gallery="mygallery" data-toggle="lightbox" data-title="Image Four" data-footer="This is Image 4"><img src="img/sample4.jpg" class="img-thumbnail"</a></li>
+            <li><a href="img/sample5.jpg" data-gallery="mygallery" data-toggle="lightbox" data-title="Image Five" data-footer="This is Image 5"><img src="img/sample5.jpg" class="img-thumbnail"</a></li>
+            <li><a href="img/sample6.jpg" data-gallery="mygallery" data-toggle="lightbox" data-title="Image Six" data-footer="This is Image 6"><img src="img/sample6.jpg" class="img-thumbnail"</a></li>
+          </ul>
         </div> <!-- col-md-8 end -->
 
         <div class="col-md-4">
@@ -158,9 +137,7 @@
                 </div>
               </div>
             </div>
-
           </div>
-
         </div>
       </div>
     </div>
@@ -176,15 +153,23 @@
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript">
+
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+    });
+    
     (function() {
-      var css = document.createElement('link');
-      css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css';
-      css.rel = 'stylesheet';
-      css.type = 'text/css';
-      document.getElementsByTagName('head')[0].appendChild(css);
+    var css = document.createElement('link');
+    css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css';
+    css.rel = 'stylesheet';
+    css.type = 'text/css';
+    document.getElementsByTagName('head')[0].appendChild(css);
     })();
+
   </script>
   <script src="js/bootstrap.js"></script>
+  <script src="js/ekko-lightbox.js"></script>
 
 </body>
 
